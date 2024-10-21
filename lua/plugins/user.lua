@@ -82,4 +82,8 @@ return {
       )
     end,
   },
+  {
+    'renerocksai/telekasten.nvim',
+    dependencies = {'nvim-telescope/telescope.nvim'},
+  },
 }

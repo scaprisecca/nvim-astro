@@ -63,6 +63,10 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+        -- Telekastan Config
+        ["<Leader>z"] = {desc = "Vault Notes"},
+        ["<Leader>zf"] = { "<cmd>Telekastan find_notes<CR>", desc = "Find Notes"},
       },
     },
   },
