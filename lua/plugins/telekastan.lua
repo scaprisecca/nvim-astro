@@ -1,9 +1,15 @@
 return {
   'renerocksai/telekasten.nvim',
   dependencies = {'nvim-telescope/telescope.nvim'},
+  config = function()
+    require('telekasten').setup({
+      home = vim.fn.expand("~/Sync/Notes/sc-vault/"), -- Replace with your preferred notes directory
+    })
+  end,
   opts = {
     mappings = {
       n = {
+        ["<Leader>z"] = { desc = "Vault Notes"},
         ["<Leader>zf"] = { "<cmd>Telekasten find_notes<CR>", desc = "Find notes"},
         ["<Leader>zg"] = { "<cmd>Telekasten search_notes<CR>", desc = "Search notes"},
         ["<Leader>zz"] = { "<cmd>Telekasten follow_link<CR>", desc = "Follow link"},
