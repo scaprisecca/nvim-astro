@@ -74,6 +74,10 @@ return {
         ["<Leader>zb"] = { "<cmd>Telekasten show_backlinks<CR>", desc = "Show backlinks"},
         ["<Leader>zI"] = { "<cmd>Telekasten insert_img_link<CR>", desc = "Insert image link"},
         ["<Leader>zi"] = { "<cmd>Telekasten insert_link<CR>", desc = "Insert link"},
+
+        -- NVIM OrgMode mappings
+        ["<Leader>o"] = {desc = "Org Mode"},
+        ["<Leader>ot"] = { "<cmd>lua require('orgmode').action('todo.toggle')<CR>", desc = "Toggle TODO"},
       },
     },
   },
