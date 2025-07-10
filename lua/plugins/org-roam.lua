@@ -8,7 +8,7 @@ return {
   },
   config = function()
     require("org-roam").setup({
-      directory = "~/Sync/Notes/org-roam/",
+      directory = "~/Sync/Notes/org/",
       -- optional - add specific files for org roam
     })
   end,
